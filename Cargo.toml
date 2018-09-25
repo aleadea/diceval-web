@@ -1,0 +1,17 @@
+[package]
+name = "diceval_web"
+version = "0.1.0"
+authors = ["Quan Brew <t@ioover.net>"]
+edition = "2018"
+repository = "https://github.com/aleadea/diceval-web"
+description = "A Javascript module for diceval"
+license = "MIT"
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+diceval = { git = "https://github.com/aleadea/diceval" }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
